@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import url(../css/fonts.css);
+.container {margin: auto; max-width: 1170px; width: 100%; position: relative; display: flex;}
+
+/*-------------------------------------------------------------------
+    파일정의: Common css
+    순서:    Header > table > list ... > Footer 
+-------------------------------------------------------------------*/
+
+/* header start */
+.header-wrap{display:flex; align-items:center ;height:82px; gap: 295px; justify-content: space-between;}
+.logo{font-size: 26px; text-transform:uppercase; font-weight:800;}
+.menu{display: flex; gap: 60px; align-items: center; justify-content: space-between; width: max-content;}
+nav ul{display:flex; align-items: center; gap: 30px;}
+nav ul li a{font-size:17px; letter-spacing:-1px; text-transform:uppercase; font-weight: 500;}
+nav ul li a:last-child{display: flex;}
+nav ul li a:last-child img{width: 14px; height: 20px;}
+.registration{display: flex; gap: 10px;}
+.b_btns{width: 77px; height: 37px;}
+.registration button:first-child{background-color: #dfdfdf; border-radius: 10px;}
+.registration button:last-child{background-color: #333333; border-radius: 10px; color: #ffffff;}
+.b_btns span{font-size: 14px; letter-spacing: 0px; text-transform: uppercase; font-weight: 300;}
+
+.menu_hamburger {display: none;}
+label.hamburger {background: #fff; width: 30px; height: 40px; position: relative; cursor: pointer;}
+input#hamburger {display:none}
+.line {position: absolute; height: 3px; width: 100%; background: #000; transition: 0.5s;}
+.line:nth-child(1) { top: 10px; }
+.line:nth-child(2) { top: 20px; }
+.line:nth-child(3) { top: 30px; }
+/* header end */
+
+/* footer start */
+.footer {border-top:1px solid #dbdbdb;}
+.footer_wrap {flex-direction: column; display: flex; height: 178px; padding-top: 45px; padding-bottom: 50px ;}
+.footer_wrap > div {display: flex; justify-content: center; gap: 15px;}
+.contact p {font-size: 15px; letter-spacing: 0px; line-height: 26px; color: #222222; font-weight: 400;}
+.copyright {padding-top: 8px;}
+.copyright p {font-size: 14px; letter-spacing: 0px; line-height: 26px; color: #666666; font-weight: 300;}
+/* footer end */
